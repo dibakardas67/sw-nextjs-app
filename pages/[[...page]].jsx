@@ -42,7 +42,7 @@ export default function Home({ model, pagePath, pages }) {
 }
 
 export async function getServerSideProps(context) {
-  const pagePath = `/content/wknd-app/us/en/${
+  const pagePath = `/content/sherwin-williams/us/en/${
     context.query.page?.join('/') || 'home'
   }`;
 

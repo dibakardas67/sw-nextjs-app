@@ -19,7 +19,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const { NEXT_PUBLIC_URL } = process.env;
 
-export const siteTitle = 'WKND';
+export const siteTitle = 'Sherwin-Williams';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -35,10 +35,10 @@ export default function Layout({ children, pages }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="AEM WKND built in Next.js" />
+        <meta name="description" content="AEM Sherwin-Williams built in Next.js" />
         <meta
           property="og:image"
-          content={`${NEXT_PUBLIC_URL}/wknd-logo-dk.svg`}
+          content={`${NEXT_PUBLIC_URL}/sw-logo-header-up.png`}
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -66,13 +66,13 @@ export default function Layout({ children, pages }) {
                     <a href="/">
                       <img
                         className="block w-auto h-8 lg:hidden"
-                        src={NEXT_PUBLIC_URL + '/wknd-logo-dk.svg'}
-                        alt="WKND"
+                        src={NEXT_PUBLIC_URL + '/sw-logo-header-up.png'}
+                        alt="Sherwin-Williams"
                       />
                       <img
                         className="hidden w-auto h-8 lg:block"
-                        src={NEXT_PUBLIC_URL + '/wknd-logo-dk.svg'}
-                        alt="WKND"
+                        src={NEXT_PUBLIC_URL + '/sw-logo-header-up.png'}
+                        alt="Sherwin-Williams"
                       />
                     </a>
                   </div>
@@ -128,9 +128,9 @@ export default function Layout({ children, pages }) {
       <footer className="text-center bg-gray-200 lg:text-left">
         <div className="p-4 text-center text-gray-700">
           © 2022 Copyright:
-          <a className="text-gray-800" href="https://wknd.site/">
+          <a className="text-gray-800" href="https://www.sherwin-williams.com/">
             {' '}
-            WKND Site
+            Sherwin-Williams
           </a>
         </div>
       </footer>
